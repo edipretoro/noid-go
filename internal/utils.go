@@ -14,6 +14,9 @@ type Minter struct {
 	oacounter        int
 	activeCounters   []Counter
 	inactiveCounters []Counter
+	total            int
+	prefix           string
+	mask             string
 }
 
 func (m *Minter) Mint() string {
@@ -22,9 +25,8 @@ func (m *Minter) Mint() string {
 
 func NewMinter() *Minter {
 	return &Minter{
-		oacounter: 0,
-		activeCounters: make([]Counter, 283),
+		oacounter:        0,
+		activeCounters:   make([]Counter, 283),
 		inactiveCounters: make([]Counter),
 	}
 }
-
