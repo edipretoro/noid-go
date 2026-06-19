@@ -19,6 +19,10 @@ type Minter struct {
 	mask             string
 }
 
+func (m *Minter) initCounters() {
+	return
+}
+
 func (m *Minter) Mint() string {
 	return ""
 }
