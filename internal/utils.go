@@ -17,6 +17,7 @@ type Minter struct {
 	total            int
 	prefix           string
 	mask             string
+	template         string
 }
 
 func (m *Minter) initCounters() {
