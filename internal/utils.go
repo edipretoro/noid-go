@@ -24,6 +24,10 @@ func (m *Minter) initCounters() {
 	return
 }
 
+func (m *Minter) parseTemplate(template string) {
+	return
+}
+
 func (m *Minter) Mint() string {
 	return ""
 }
